@@ -1,0 +1,16 @@
+<services>
+  <service name="tar_scm" mode="disabled">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/Mellanox/libvma.git</param>
+    <param name="package-meta">no</param>
+    <param name="exclude">.git</param>
+    <param name="filename">libvma</param>
+    <param name="versionformat">@PARENT_TAG@.@TAG_OFFSET@.%h</param>
+    <param name="revision">1610cf601e5a601672bdade4f8c70a9fd47f5f24</param>
+  </service>
+  <service name="recompress" mode="disabled">
+    <param name="file">libvma*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+
+</services>

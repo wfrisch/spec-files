@@ -1,0 +1,19 @@
+<services>
+  <service name="tar_scm" mode="disabled">
+    <param name="url">https://github.com/SUSE/drbd-formula.git</param>
+    <param name="scm">git</param>
+    <param name="exclude">.git</param>
+    <param name="filename">drbd-formula</param>
+    <param name="versionformat">0.4.2+git.%ct.%h</param>
+    <param name="revision">1e3ab3447c27973ffd184a16b8fbfc98c9284f89</param>
+  </service>
+
+  <service name="recompress" mode="disabled">
+    <param name="file">*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+
+  <service name="set_version" mode="disabled">
+    <param name="basename">drbd-formula</param>
+  </service>
+</services>
